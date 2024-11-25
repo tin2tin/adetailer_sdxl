@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "adetailer-sdxl"
+version = "0.1.0"
+description = "A Detailer for SDXL models for enhancing specific areas of images"
+authors = ["TheBlackHatMagician <example@example.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/theblackhatmagician/adetailer_sdxl"
+repository = "https://github.com/theblackhatmagician/adetailer_sdxl"
+keywords = ["AI", "stable-diffusion", "image-enhancement", "deep-learning"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.0"
+torchvision = "^0.15"
+numpy = "^1.24"
+Pillow = "^10.0"
+opencv-python = "^4.8"
+transformers = "^4.33"
+tqdm = "^4.65"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.5"
+black = "^23.0"
+flake8 = "^6.1"
+isort = "^5.12"
+
+[build-system]
+requires = ["poetry>=1.2"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+exclude = [
+    ".git",
+    "__pycache__",
+    "dist",
+    "build",
+    "*.egg-info",
+]
