@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "adetailer-sdxl"
+name = "asdff"
 version = "0.1.0"
 description = "A Detailer for SDXL models for enhancing specific areas of images"
 authors = ["TheBlackHatMagician <example@example.com>"]
